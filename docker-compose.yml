@@ -1,0 +1,7 @@
+version: '3.6'
+services:
+  backup:
+    build: backup/
+    volumes:
+      - "~/volume-backup:/backup"
+      - "/var/lib/docker:/docker"
